@@ -405,7 +405,7 @@ export function autocomplete<TItem extends BaseItem>(
       );
 
       if (shouldRestoreFocus) {
-        dom.value.root.querySelector<HTMLButtonElement>('button')?.focus();
+        dom.value.detachedSearchButton.focus();
       }
     }
   }
